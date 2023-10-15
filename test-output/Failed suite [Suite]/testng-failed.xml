@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT" verbose="5">
+  <parameter name="browserName" value="chrome"/>
+  <listeners>
+    <listener class-name="com.test.SeleniumAutomation.TestCases.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)(failed)" verbose="5">
+    <classes>
+      <class name="com.test.SeleniumAutomation.TestCases.DepandanctTest">
+        <methods>
+          <include name="launchAppllication"/>
+          <include name="test1"/>
+          <include name="test2"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.test.SeleniumAutomation.TestCases.DepandanctTest -->
+    </classes>
+  </test> <!-- Test1(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

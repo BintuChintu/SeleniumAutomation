@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="tests" thread-count="3">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<!-- <parameter name="browserName" value="chrome" /> -->
+	<parameter name="browserName" value="firefox" />
+
+	<test thread-count="5" name="Test">
+		<classes>
+			 <class name="com.test.SeleniumAutomation.TestCases.TestNGAnnotationTest" /> 
+			 <class name="com.test.SeleniumAutomation.TestCases.TestNGAnnotationTest2" /> 
+			<!-- <class name =
+			"com.test.SeleniumAutomation.TestCases.BrokenUrlTest"/> -->
+			<!-- <class name =
+			"com.test.SeleniumAutomation.TestCases.DataDrivernTest"/> -->
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+TestSuite -->
